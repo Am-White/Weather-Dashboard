@@ -1,0 +1,43 @@
+* {
+    margin: 0 0 0 0;
+}
+body {
+    display: block flex;
+    text-align: center;
+    padding: 8%;
+    background-color: aquamarine;
+}
+.main-title {
+    font-size: 50px;
+}
+.welcome_message {
+    font-size: 25px;
+}
+#start_quiz {
+    margin-top: 75px;
+    font-size: 35px;
+}
+main{
+    display: block ;
+    height: fit-content;
+    padding: 10px;
+    background-color: cadetblue;
+    text-align: center;
+    
+}
+#highscore-link {
+    font-size: 20px;
+}
+#time-display {
+    display: block;
+    padding: 15px;
+    width: fit-content;
+    background-color: cornflowerblue;
+    border-radius: 55px;
+
+}
+ /* Making sections disappear for welcome page */
+.hidden-page {
+    display: none;
+}
+
