@@ -7,9 +7,10 @@
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="assetss/css/style.css" />
-<script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assetss/css/style.css" />
+    <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="jumbotron jumbotron-fluid text-center">
         <div class="container">
@@ -22,6 +23,96 @@
 
           </div>
       </div>
+
+    <div class="row">
+      <div class="col-4">
+        <h2>Search for a City:</h2>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-light">Left</button>
+              <button type="button" class="btn btn-light">Middle</button>
+              <button type="button" class="btn btn-light">Right</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-8">
+
+        <div id="current-card" class="border border-dark">
+          <h1 id="current-location">HELLO</h1>
+
+          <div id="current-temp">Temp</div>
+          <div id="current-hum">Humidity</div>
+          <div id="current-wind">Wind</div>
+          <div if="current-uv">UV index</div>
+        </div>
+
+        <div id="five-day">
+          <h2>5-Day Forecast</h2>
+          
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Date</h5>
+                <p class="card-text">Emoji</p>
+                <p class="card-text">Temp</p>
+                <p class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Date</h5>
+                <p class="card-text">Emoji</p>
+                <p class="card-text">Temp</p>
+                <p class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Date</h5>
+                <p class="card-text">Emoji</p>
+                <p class="card-text">Temp</p>
+                <p class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Date</h5>
+                <p class="card-text">Emoji</p>
+                <p class="card-text">Temp</p>
+                <p class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">Date</h5>
+                <p class="card-text">Emoji</p>
+                <p class="card-text">Temp</p>
+                <p class="card-text">Hum</p>
+              </div>
+            </div>
+          
+
+        </div>
+
+        </div>
+      </div>
+    </div>
     
 
 
