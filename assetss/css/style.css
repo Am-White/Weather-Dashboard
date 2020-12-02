@@ -1,0 +1,32 @@
+/* Header */
+#header {
+    color: rgb(90, 90, 204);
+}
+
+/* Setting side margins for body*/
+#aside {
+    margin-left: 15px;
+}
+
+#right-aside {
+    margin-right: 15px;
+}
+/* */
+#list-of-locations button{
+    color: rgb(69, 69, 202);
+}
+/*Padding and style for the current weather card */
+#current-card {
+    padding: 8px;
+    border-radius: 3%;
+}
+
+/* Styling of 5-day forcast card */
+#five-day {
+    margin-top: 10px;
+}
+
+.card-body {
+    background-color: rgba(74, 122, 226, 0.623);
+}
+
