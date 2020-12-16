@@ -1,5 +1,6 @@
 // API key
-const apiKey ="d0c7a236e73b7d700b29c6edb3005c4a";
+const apiKey ="d93e9a50c4575d5aa5d8c808d9c9b12c4";
+
 //Variables
 const searchBtn = $('#search-btn');
 let inputCity = $('#input-search');
