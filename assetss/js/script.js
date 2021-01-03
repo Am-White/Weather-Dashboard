@@ -1,5 +1,5 @@
 // API key 
-var appID = "d0c7a236e73b7d700b29c6edb3005c4a";
+var appID = "3f01d65ad17f9cce16a27214c18fd113";
 // finding and assigning elements
 var searchCity = $('#searchCity')
 var searchBtn = $('#searchBtn');
