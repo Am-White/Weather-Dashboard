@@ -47,6 +47,26 @@ findUvIndex = (lat, lon, object) => {
     
 }
 
+//UV index 2
+checkUVIndexValue = index =>{
+    index = parseInt(index);
+    if(index < 3){
+        return " styleUV-index green";
+    }
+    else if(index >=3 && index <= 5)
+    {
+        return "styleUV-index yellow";
+    }
+    else if(index >=6 && index <= 7)
+    {
+        return "styleUV-index orange";
+    }
+    else 
+    {
+        return "styleUV-index red";
+    }
+}
+
 //Get city and data
 firstResponse = (object,value) => {
     let cityName = object.city.name;
@@ -134,3 +154,22 @@ displayForecast = (cityHum, cityTemp, cityIcon, cityDate) =>{
 
 
 }
+
+//local storage
+function setToLocalStorage(cityName) {
+    let cities = [];
+
+    if (getDataFromLocalStorage() !== null){
+        cities = getDataFromLocalStorage();
+        console.log(cities);
+
+        localStorage.setItem('allTheCitiesSearchedFor', JSON.stringify(cities));
+    }
+}
+
+date = num => moment().add( num, 'days').format("MM/DD/YYYY");
+toFahrenheit = temp => Math.round((parseInt(temp) - 273.15) * 1.8 + 32);
+
+getDataFromLocalStorage = () => JSON.parse(localStorage.getItem('allTheCitiesSearchedFor'));
+
+
