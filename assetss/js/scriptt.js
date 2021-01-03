@@ -31,6 +31,21 @@ getWeather = (city) => {
 
 //UV Index//
 //=====================???????//
+findUvIndex = (lat, lon, object) => {
+    var APIKey = "3f01d65ad17f9cce16a27214c18fd113";
+    var baseURL = "https://api.openweathermap.org/data/2.5/uvi?lat="+ lat +"&lon="+lon +"&appid=" + APIKey;
+    
+    $.ajax({
+        url: baseURL,
+        method: "GET"
+    }).then(function(response){
+        console.log(response);
+        var value = response.value;
+        console.log("UVINDEX: "+value);
+        firstResponse(object,value);
+    });
+    
+}
 
 //Get city and data
 firstResponse = (object,value) => {
@@ -90,4 +105,32 @@ cityHistoryEvent = e => {
     localStorage.setItem('lastCityDisplay', JSON.stringify(lastCityDisplay));
 }
 
-//City info
+//City info for today
+displayCityInfo = (cityName, cityHum, cityTemp, cityIcon, citySpeed, cityDate, uvIndex) => {
+    cityInfoEl.empty();
+        const title = $("<h3>").test(cityName + " " + "(" +cityDate[0]+")");
+        const temp = $("<p>").text("Temperature: "+cityTemp[0] + "F");
+        const hum = $("<p>").text("Humidity: "+ cityHum[0] + "%");
+        const windSpeed = $("<p>").text("Wind Speed: " + citySpeed[0] + "MPH");
+        const icon = $("<img>").attr('src', cityIcon[0]);
+        const uv = $("<p>").text("UV Index: "+ uvIndex).addClass(checkUVIndexValue(uvIndex));
+
+        cityInfoEl.append(title,temp,hum,windSpeed,icon,uv);
+}
+
+//5DAY forecast ( f(five-day) for i(index) )
+displayForecast = (cityHum, cityTemp, cityIcon, cityDate) =>{
+    forecastEl.empty();
+    for( let f = 0; f < 5; f++){
+        const forecastDiv = $('<div>').addClass('col-12 col-md-2  bg-primary rounded ml-3 mb-3');
+        const dateEl = $('<h6>').text(cityDate[f]);
+        const iconEl = $('<img>').attr('src',cityIcon[f]);
+        const tempEl = $('<p>').text("Temp: "+cityTemp[f]+ "F");
+        const humEl = $('<p>').text("Humidity: "+cityHum[f]+"%");
+
+        forecastDiv.append(dateEl,iconEl,tempEl,humEl);
+        forecastEl.append(forecastDiv);
+        }
+
+
+}
