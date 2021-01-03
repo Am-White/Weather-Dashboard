@@ -1,1 +1,43 @@
 
+# Weather Dashboard
+
+    
+## Table of Contents:
+* [Description](#description)
+* [Installation](#installation)
+* [Contribution](#contribution)
+* [Usage](#usage)
+* [Test](#tests)
+* [Credit](#credit)
+* [Contact](#email)
+* [Github](#username)
+* [License](#license)
+
+## Description:
+
+    This app relays realtime weather information for any location for a five day span.
+
+## Installation:
+    None.
+
+## Contribution:
+    None.
+
+## Usage:
+    In anyway possible. The app is meant to be a way to easily and conveniently check the forecast in any given area.
+
+## Test:
+    None.
+
+## Credit
+    Amethyst White
+
+## Questions and Contact:
+    For any questions or inquiries, you can send me a direct email or visit 
+    my GitHub page:
+[GitHub Profile](https://github.com/Am-White)
+
+[Email](aybwhite@gmail.com)
+
+## License:
+[License](https://opensource.org/licenses/Apache-2.0) 
