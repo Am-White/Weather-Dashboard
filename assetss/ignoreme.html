@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assetss/css/style.css" />
+    <script src="https://kit.fontawesome.com/4439e3b362.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header" class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+          <h1 class="display-4"><strong>Weather Dashboard</strong></h1>
+        </div>
+      </div>
+
+    <div class="row">
+      <div id="aside" class="col">
+        <h2>Search for a City:</h2>
+
+        <div class="input-group mb-3">
+            <input id="input-search" type="text" autocomplete="off" class="form-control" placeholder="Location" aria-describedby="button-addon2">
+
+          <div id="search-area" class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="list-of-locations" class="card">
+          <ul class="list-group list-group-flush">
+            <div id="location-buttons" class="btn-group-vertical">
+              <button id="city1" type="button" class="city btn btn-light">New York</button>
+              <button id="city2" type="button" class="city btn btn-light">San Francisco</button>
+              <button id="city3" type="button" class="city btn btn-light">Seattle</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div id="right-aside" class="col-8">
+
+        <div id="current-card" class="border border-dark">
+          <h2 id="current-location">LOCATION</h2> 
+          <img id="iconHead"></img>
+          <p id="current-date">00-00-0000</p>
+          <p id="current-temp">Temperature:</p>
+          <p id="current-hum">Humidity:</p>
+          <p id="current-wind">Wind Speed:</p>
+        </div>
+
+        <div id="five-day">
+          <h2>5-Day Forecast:</h2>
+          
+          <div class="card-group">
+            <div id="day1" class="card">
+              <div class="card-body text-center">
+                <h5 id="card-date" class="card-title">Date</h5>
+                <img id="card-emoji" src=""></img>
+                <p id="card-temp" class="card-text">Temp</p>
+                <p id="card-hum" class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div id="day2" class="card">
+              <div class="card-body text-center">
+                <h5 id="card-date" class="card-title">Date</h5>
+                <img id="card-emoji" src=""></img>
+                <p id="card-temp" class="card-text">Temp</p>
+                <p id="card-hum" class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div id="day3" class="card">
+              <div class="card-body text-center">
+                <h5 id="card-date" class="card-title">Date</h5>
+                <img id="card-emoji" src=""></img>
+                <p id="card-temp" class="card-text">Temp</p>
+                <p id="card-hum" class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div id="day4" class="card">
+              <div class="card-body text-center">
+                <h5 id="card-date" class="card-title">Date</h5>
+                <img id="card-emoji" src=""></img>
+                <p id="card-temp" class="card-text">Temp</p>
+                <p id="card-hum" class="card-text">Hum</p>
+              </div>
+            </div>
+
+            <div id="day5" class="card">
+              <div class="card-body text-center">
+                <h5 id="card-date" class="card-title">Date</h5>
+                <img id="card-emoji" src=""></img>
+                <p id="card-temp" class="card-text">Temp</p>
+                <p id="card-hum" class="card-text">Hum</p>
+              </div>
+            </div>
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script type="text/javascript" src="./assetss/js/script.js"></script>
+        <script type="text/javascript" src="./assetss/js/geolocation.js"></script>
+</body>
+</html>

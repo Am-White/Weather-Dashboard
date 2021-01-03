@@ -1,32 +1,42 @@
-/* Header */
+/*UV Index styling */
+.styleUV-index{
+    width: fit-content;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: -1px -1px 21px 0px rgba(50, 50, 50, 0.75);
+ 
+}
+.green{
+    background-color: green; 
+}
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+.orange{
+    background-color: orange;
+    color: black;
+}
+.red{
+    background-color: red;
+}
+
+/*webpage styling*/
+/*header background*/
 #header {
-    color: rgb(90, 90, 204);
+    background-color: rgb(97, 129, 233);
 }
-
-/* Setting side margins for body*/
-#aside {
-    margin-left: 15px;
+/*search button color*/
+#searchBtn {
+    background-color:  rgb(97, 129, 233);
 }
-
-#right-aside {
-    margin-right: 15px;
+/*city buttons saved color*/
+#asideBtn button {
+    color: rgb(97, 129, 233);
 }
-/* */
-#list-of-locations button{
-    color: rgb(69, 69, 202);
+/*card background color*/
+#card {
+    background-color: rgb(97, 129, 233);
 }
-/*Padding and style for the current weather card */
-#current-card {
-    padding: 8px;
-    border-radius: 3%;
-}
-
-/* Styling of 5-day forcast card */
-#five-day {
-    margin-top: 10px;
-}
-
-.card-body {
-    background-color: rgba(74, 122, 226, 0.623);
-}
-
