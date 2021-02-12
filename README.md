@@ -5,7 +5,7 @@
 ## Table of Contents:
 * [Description](#description)
 * [Installation](#installation)
-* [Contribution](#contribution)
+* [Screenshot](#screenshot)
 * [Usage](#usage)
 * [Test](#tests)
 * [Credit](#credit)
@@ -18,11 +18,11 @@
     This app relays realtime weather information for any location for a five day span. 
     While saving your previous searches in the left side bar.
 
-## Installation:
-    None.
+## Live link:
+[Live link though GitHub] ()
 
-## Contribution:
-    None.
+## Screenshot:
+![Sreenshot of Application] ()
 
 ## Usage:
     In anyway possible. The app is meant to be a way to easily and conveniently check the forecast in any given area.
