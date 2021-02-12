@@ -19,7 +19,7 @@
     While saving your previous searches in the left side bar.
 
 ## Live link:
-[Live link though GitHub] ()
+[Live link though GitHub] (https://am-white.github.io/Weather-Dashboard/)
 
 ## Screenshot:
 ![Sreenshot of Application] ()
