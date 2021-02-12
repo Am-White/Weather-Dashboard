@@ -15,7 +15,8 @@
 
 ## Description:
 
-    This app relays realtime weather information for any location for a five day span.
+    This app relays realtime weather information for any location for a five day span. 
+    While saving your previous searches in the left side bar.
 
 ## Installation:
     None.
@@ -35,6 +36,7 @@
 ## Questions and Contact:
     For any questions or inquiries, you can send me a direct email or visit 
     my GitHub page:
+    
 [GitHub Profile](https://github.com/Am-White)
 
 [Email](aybwhite@gmail.com)
